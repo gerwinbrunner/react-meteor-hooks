@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Tracker } from "meteor/tracker";
 
 export default function hook_useSubscription(pubName, ...subOpts) {
   const [loading, setLoading] = useState(true)
